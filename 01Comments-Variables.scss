@@ -1,0 +1,31 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+/*null*/
+$i-am-null: null;
+
+/*booleans*/
+$i-am-true: true;
+$i-am-false: false;
+
+/*number*/
+$a-number: 7;
+
+/*string*/
+$name: 'Uday';
+$name2: "Tak";
+$name-together: 'Uday'+' Tak';
+
+/*color*/
+$color: lighten(white,15%);
+$venus: #998099;
+
+
+body{
+	//single line comment - removed in SASS
+	font: 100% $font-stack;
+	/*multi
+	line
+	comment*/
+	color: $primary-color
+}
