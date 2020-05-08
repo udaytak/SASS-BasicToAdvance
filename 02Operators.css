@@ -1,0 +1,65 @@
+h1 {
+  font-size: 6px; }
+
+h2 {
+  font-size: 2px; }
+
+h3 {
+  font-size: 5;
+  opacity: 0.4;
+  padding-right: 3.5px; }
+
+h4 {
+  width: 20px;
+  width: 30px;
+  width: 12px; }
+
+/*Using Equality Operators*/
+h4:after {
+  content: "My font is: sans-serif."; }
+
+/*Using Comparison Operators*/
+h2 {
+  padding: 25px; }
+
+/*Using Logical Operators*/
+h2:after {
+  content: "var1 and var2 are false"; }
+
+/*String Operator*/
+h2:after {
+  content: "Full name is Uday Tak"; }
+
+/*Using color operator*/
+h1 {
+  color: #66c8ff; }
+
+h2 {
+  color: #ff2b5b; }
+
+/*& Operator*/
+.button:visited {
+  color: white; }
+.button:hover {
+  color: white; }
+.button:active {
+  color: white; }
+
+.button > span {
+  color: white; }
+.button + span {
+  color: white; }
+.button ~ span {
+  color: white; }
+
+.btn-primary {
+  color: white; }
+.btn-secondary {
+  color: white; }
+
+body.page-about .button {
+  color: white; }
+
+/*Interpolation*/
+
+/*# sourceMappingURL=02ArithmeticOperators.css.map */
