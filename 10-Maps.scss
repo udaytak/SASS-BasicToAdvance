@@ -1,0 +1,18 @@
+$primary-colors: (
+    "red": "#ff0000",
+    "green": "#00ff00",
+    "blue": "#0000ff"
+);
+
+@each $color in $primary-colors {
+    .thing-#{$color}{
+        content: "#{$color}";
+    }
+}
+
+/*Key Value pair*/
+@each $color-name, $color-code in $primary-colors {
+    .thing-#{$color-name}{
+        content: $color-code;
+    }
+}
