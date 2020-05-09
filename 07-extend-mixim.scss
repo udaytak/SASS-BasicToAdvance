@@ -1,0 +1,36 @@
+
+/*mixim*/
+@mixin hide-text {
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.foo{
+    @include hide-text;
+}
+
+.bar{
+    @include hide-text;
+}
+
+.baz{
+    @include hide-text;
+}
+
+/*extends*/
+%hide-text1{
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.foo1{
+    @extend %hide-text1;
+}
+
+.bar1{
+    @extend %hide-text1;
+}
+
+.baz1{
+    @extend %hide-text1;
+}
