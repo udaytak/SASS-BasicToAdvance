@@ -1,3 +1,4 @@
+/*Nesting Rules*/
 #main p {
   color: #00ff00;
   width: 97%; }
@@ -28,5 +29,15 @@ a {
     font-weight: bold; }
     #main a:hover {
       color: red; }
+
+/*Nesting Properties*/
+.funky {
+  font-family: fantasy;
+  font-size: 30em;
+  font-weight: bold; }
+
+.funky {
+  font: 20px/24px fantasy;
+    font-weight: bold; }
 
 /*# sourceMappingURL=08-NestingRules.css.map */
