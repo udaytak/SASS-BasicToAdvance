@@ -1,0 +1,29 @@
+$background-colors-list: #4BC2A5 #606F40 #6648CA #6B6022 #2F54E9;
+$border-colors-list: #ff9900 #77ff66 #73C227 #C23E50 #7BAFC2;
+$color-list: #111 #222 #333 #444 #555;
+
+$font-list: 'Raleway','Dosis', 'Lato';
+/*Three comma separated elements*/
+
+$pad-list: 10px 8px 12px;
+/*Three space separated elements*/
+
+$multi-list: 'Roboto', 15px 1.3em;
+/*Three multi-list has two lists*/
+
+@each $current-color in $color-list {
+    $i: index($color-list, $current-color);
+    .stuff-#{$i} {
+        color: $current-color;
+        background-color: nth($background-colors-list, $i);
+        border: 1px solid nth($border-colors-list, $i);
+    }
+}
+
+h1{
+    background-color: nth($background-colors-list , $n:3 );
+}
+
+h1{
+    background-color: nth($background-colors-list , 4);
+}
