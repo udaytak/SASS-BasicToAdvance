@@ -1,5 +1,4 @@
-
-/*mixim*/
+/*mixin*/
 @mixin hide-text {
     text-indent: -9999px;
     overflow: hidden;
@@ -17,12 +16,13 @@
     @include hide-text;
 }
 
-/*extends*/
+/*extend*/
 %hide-text1{
     text-indent: -9999px;
     overflow: hidden;
 }
 
+/*mixin*/
 .foo1{
     @extend %hide-text1;
 }
@@ -33,4 +33,20 @@
 
 .baz1{
     @extend %hide-text1;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+.foo2 {
+    @include border-radius(5px);
+}
+
+.bar2 {
+    @include border-radius(7px);
+}
+
+.baz2 {
+    @include border-radius(9px);
 }

@@ -1,4 +1,4 @@
-/*mixim*/
+/*mixin*/
 .foo {
   text-indent: -9999px;
   overflow: hidden; }
@@ -11,9 +11,19 @@
   text-indent: -9999px;
   overflow: hidden; }
 
-/*extends*/
+/*extend*/
 .foo1, .bar1, .baz1 {
   text-indent: -9999px;
   overflow: hidden; }
 
-/*# sourceMappingURL=07-extend-mixim.css.map */
+/*mixin*/
+.foo2 {
+  border-radius: 5px; }
+
+.bar2 {
+  border-radius: 7px; }
+
+.baz2 {
+  border-radius: 9px; }
+
+/*# sourceMappingURL=07-extend-mixin.css.map */
