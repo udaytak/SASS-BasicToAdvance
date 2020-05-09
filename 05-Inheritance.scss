@@ -1,0 +1,43 @@
+.message{
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.success{
+    @extend .message;
+    border-color: green;
+}
+
+.error{
+    @extend .message;
+    border-color: red;
+    border: #f00
+}
+
+.warning{
+    @extend .message;
+    border-color: yellow;
+}
+
+/*multi level inheritance*/
+.seriousError{
+    @extend .error;
+    border-width: 3px;
+}
+
+.attention{
+    font-size: 3em;
+    background-color: #ff0;
+}
+
+/* Multiple Inheritance*/
+.criticalError{
+    @extend .seriousError;
+    @extend .attention;
+    position: fixed;
+    top: 10%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+}

@@ -1,0 +1,32 @@
+.message, .success, .error, .seriousError, .criticalError, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error, .seriousError, .criticalError {
+  border-color: red;
+  border: #f00; }
+
+.warning {
+  border-color: yellow; }
+
+/*multi level inheritance*/
+.seriousError, .criticalError {
+  border-width: 3px; }
+
+.attention, .criticalError {
+  font-size: 3em;
+  background-color: #ff0; }
+
+/* Multiple Inheritance*/
+.criticalError {
+  position: fixed;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%; }
+
+/*# sourceMappingURL=05-Inheritance.css.map */
