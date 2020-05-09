@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAI;EACA,KAAK,EAAE,GAAG;;AAGd,IAAI;EAEA,UAAU,EAAE,IAAI;;AAGpB,IAAI;EAEA,UAAU,EAAE,MAAM",
+"sources": ["06-Placeholder.scss"],
+"names": [],
+"file": "06-Placeholder.css"
+}
