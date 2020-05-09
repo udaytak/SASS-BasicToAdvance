@@ -1,0 +1,25 @@
+.btn{
+    background: #ededed;
+    border: 1px solid #555;
+    color: #555;
+    padding: 1em 2em;
+
+    font: {
+        family:fantasy;
+        size: 1rem;
+    }
+
+    @at-root a#{&} {
+        text-decoration: none;
+    } 
+}
+
+
+.parent{
+    font-size: 1rem;
+    padding: 1em 2em;
+
+    @at-root .likely-modified {
+        font-size: 1.5em;
+    } 
+}
