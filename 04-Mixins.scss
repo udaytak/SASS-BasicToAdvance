@@ -1,0 +1,49 @@
+$font-base: 16px;
+
+@mixin sample {
+    font-size: $font-base;
+}
+
+@mixin large-text {
+    font: {
+        family:Arial;
+        size: 20px;
+        weight: bold;
+    }
+
+    color: #ff0000;
+}
+
+p {
+    @include sample;
+}
+
+h1 {
+    @include large-text;
+}
+
+@mixin silly-links {
+    a {
+        color: blue;
+        background-color: red;
+    }
+}
+
+@include silly-links;
+
+@mixin compound {
+    @include highlighted-background;
+    @include harder-text;
+}
+
+@mixin highlighted-background {
+    background-color: #fc0;
+}
+
+@mixin harder-text {
+    font-size: 20px;
+}
+
+h4{
+    @include compound;
+}
