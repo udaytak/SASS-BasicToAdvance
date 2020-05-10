@@ -5,3 +5,11 @@
 @function calc-percentage($target, $container) {
     @return ($target/$container) * 100;
 };
+
+.container {
+    padding: calc-sum(100px, 200px);
+}
+
+.inner-container {
+    width: calc-percentage(250px, 555px);
+}
