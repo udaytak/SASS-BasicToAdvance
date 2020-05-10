@@ -1,0 +1,19 @@
+.brand-button {
+  background: #6dcff6; }
+
+.brand-button:hover {
+  background: #cdeffc; }
+
+.brand-button:visited {
+  background: #0fafee; }
+
+.modal.focus {
+  background: #6dcff6; }
+
+.modal.blur {
+  background: rgba(109, 207, 246, 0.7); }
+
+.main-content {
+  background: #6dcff6; }
+
+/*# sourceMappingURL=12-Built-in-functions.css.map */

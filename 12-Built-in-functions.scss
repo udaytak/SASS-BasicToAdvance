@@ -1,0 +1,44 @@
+$main-color: #6dcff6;
+$darker-color: darken($main-color, 20%);
+$lighter-color: lighten($main-color, 20%);
+$opaque-color: opacify($main-color, 0.5);
+$transparent-color: transparentize($main-color, 0.3);
+
+$list: b, c, d, e, f;
+$new-list: prepend($list, a); //b, c, d, e, f;
+
+$list: a, b, c, d z, e, a, f;
+$first-index: index($list, a); //1
+$last-index: last-index($list, a); //6
+$last-index: last-index($list, z); //null
+
+$list: a, b, c, d, e, f;
+$new-list: slice($list, 3, 5); // c, d, e
+
+$list: a, b, c d e, f, g, h; 
+$new-list: to-string($list); //abcdefgh
+$new-list: to-string($list, '-'); //a-b-c-d-e-f-g-h
+
+.brand-button{
+    background: $main-color;
+}
+
+.brand-button:hover{
+    background: $lighter-color;
+}
+
+.brand-button:visited{
+    background: $darker-color;
+}
+
+.modal.focus {
+    background: $main-color;
+}
+
+.modal.blur {
+    background: $transparent-color;
+}
+
+.main-content {
+    background: $opaque-color;
+}
