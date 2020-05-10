@@ -1,0 +1,7 @@
+@function calc-sum($num1, $num2) {
+    @return $num1 + $num2;
+};
+
+@function calc-percentage($target, $container) {
+    @return ($target/$container) * 100;
+};
