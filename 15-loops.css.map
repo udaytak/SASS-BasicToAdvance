@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,YAAY;AAER,OAAY;EAAC,KAAK,EAAE,GAAQ;;AAA5B,OAAY;EAAC,KAAK,EAAE,GAAQ;;AAA5B,OAAY;EAAC,KAAK,EAAE,GAAQ",
+"sources": ["15-loops.scss"],
+"names": [],
+"file": "15-loops.css"
+}
