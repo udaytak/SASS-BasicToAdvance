@@ -32,3 +32,12 @@ $bck: back, blue, transparent;
         background-color: $back;
     }
 }
+
+
+/*while directive - bootstrap column generation*/
+$x:1;
+
+@while $x < 13 {
+    .col-#{$x} {width: 100/12 * $x;}
+    $x : $x + 1;    
+}
