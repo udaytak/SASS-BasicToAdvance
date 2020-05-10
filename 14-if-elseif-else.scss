@@ -1,3 +1,4 @@
+/*if condition*/
 p{
     @if 1+1 == 2 { border: 1px solid; }
     @if 5 < 3 { border: 2px dotted; }
@@ -28,3 +29,19 @@ p{
 .txt2 {
     @include txt(bold);
 }
+
+/* else if condition*/
+$type : monster;
+
+h1{
+    @if $type == human {
+        color: blue;
+    } @else if $type == elf {
+        color: red;
+    } @else if $type == monster {
+        color: yellow;
+    } @else {
+        color: white;
+    }
+}
+
