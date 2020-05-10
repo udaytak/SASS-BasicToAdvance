@@ -8,4 +8,43 @@
 .item-3 {
   width: 6em; }
 
+/*each loop*/
+.bob-avatar {
+  background-image: url("/img/bob.png"); }
+
+.john-avatar {
+  background-image: url("/img/john.png"); }
+
+.bill-avatar {
+  background-image: url("/img/bill.png"); }
+
+.mike-avatar {
+  background-image: url("/img/mike.png"); }
+
+/*each loop using map*/
+.bob-picture {
+  background-image: url("/img/bob.png"); }
+
+.john-picture {
+  background-image: url("/img/john.png"); }
+
+.bill-picture {
+  background-image: url("/img/bill.png"); }
+
+.mike-picture {
+  background-image: url("/img/mike.png"); }
+
+/*Example Button setup with @each*/
+.alert-button {
+  color: yellow;
+  background-color: red; }
+
+.submit-button {
+  color: white;
+  background-color: green; }
+
+.back-button {
+  color: blue;
+  background-color: transparent; }
+
 /*# sourceMappingURL=15-loops.css.map */

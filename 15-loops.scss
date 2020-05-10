@@ -3,3 +3,32 @@
     .item-#{$i} {width: 2em * $i;}
 }
 
+
+/*each loop*/
+@each $usr in bob, john, bill, mike {
+    .#{$usr}-avatar {
+        background-image: url('/img/#{$usr}.png');
+    }
+}
+
+/*each loop using map*/
+$ppl: (usr1:bob, usr2:john, usr3:bill, usr4:mike);
+
+@each $key, $usr in $ppl {
+    .#{$usr}-picture {
+        background-image: url('/img/#{$usr}.png');
+    }
+}
+
+/*Example Button setup with @each*/
+
+$alt: alert, yellow, red;
+$sub: submit, white, green;
+$bck: back, blue, transparent;
+
+@each $type, $txt, $back in $alt, $sub, $bck {
+    .#{$type}-button {
+        color: $txt;
+        background-color: $back;
+    }
+}
